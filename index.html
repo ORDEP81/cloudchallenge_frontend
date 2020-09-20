@@ -21,13 +21,15 @@
 					<li><a href="."><i class="fas fa-home"></i>South Bend, Indiana</a></li>
 					<li><a href="mailto:Ordep81@gmail.com"><i class="far fa-envelope" target="_blank"></i>Ordep81@Gmail.com</a></li>
 					<li><a href="https://www.LinkedIN.com//in/pedro-oliva/"><i class="fab fa-linkedin" target="_blank"></i>LinkedIN Profile</a></li>
-					<li><a href="https://dev.to/ordep81"><i class="fab fa-dev" target="_blank"></i>Dev Blog Posts</a></li>	
-					<li><a href="https://www.github.com/Ordep81"><i class="fab fa-github"></i>Github - Ordep81</a></li> </br>
+					<li><a href="https://dev.to/ordep81"><i class="fab fa-dev" target="_blank"></i>Dev Blog Posts</a></li>
+					<li><a href="https://www.github.com/Ordep81"><i class="fab fa-github"></i>Github</a></li> 
+					<li><a href="https://twitter.com/Ordep81"><i class="fab fa-twitter"></i>Twitter</a></li></br>
 				</ul>
 
 				<div id="certs">
 					<h3>Certifications</h3>
-						<a href="https://www.youracclaim.com/badges/61c7fbbc-08a5-4d04-836d-fbe036c25c40/public_url"><img src="solutions.png"></a>
+						<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="61c7fbbc-08a5-4d04-836d-fbe036c25c40" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
+						<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="8887e24a-950a-4050-b3d4-ae2634b0a870" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
 						
 				</div>
 			</div>
@@ -37,7 +39,7 @@
 						<div class="title">
 							<p class="bold">About Me</p>
 						</div>
-						<p>AWS certified technology professional with a nearly ten-year tech career that includes coding in diverse professional roles and personal projects. Deep interest in AWS cloud and DevOps focused opportunities.</p> 
+						<p>2X AWS certified technology professional with a nearly ten-year tech career that includes coding in diverse professional roles and personal projects. Deep interest in AWS cloud and DevOps focused opportunities.</p> 
 					</div>
 			
 					<div class="resume_item experience">
@@ -96,11 +98,12 @@
 					<div class="resume_item skills">
 						<div class="title">
 							<div class="info">
-								<p class="bold">Skills & Interests</p>
+								<p class="bold">Skills</p>
 							</div>
 						</div>
-						<p>HTML/CSS, Ruby on Rails, Sinatra, Heroku, Autodesk Inventor 3D, social media, bilingual English & Spanish
-							Interests: Video games, baseball, cars, computers, tech gadgets, entrepreneurship, reading, learning</p>
+						<p>AWS Cloud, S3, EC2,  Lambda, API Gateway, DynamoDB, Cloudformation, SAM, Route53, Git, Github, CI/CD, Atlassian Jira/Confluence, 
+							Linux, Ubuntu, HTML/CSS, Ruby on Rails, Python, Yaml, Sinatra, Heroku, bilingual English & Spanish (Fluent in Both)
+						</p>
 					</div>
 				
 					
@@ -111,7 +114,14 @@
 							</div>
 						</div>
 						<ul>
-							<li>This site, Which is a serverless website using multiple AWS Services <a href="https://dev.to/ordep81/my-journey-through-the-cloud-challenge-4pbl">(Cloud Resume Challenge)</a></li>
+							<p class="semi-bold">AWS Projects</p>
+							<li><b>Resume Site on AWS</b> This site (ORDEProject.com), Which is a serverless website using multiple AWS Services <a href="https://dev.to/ordep81/my-journey-through-the-cloud-challenge-4pbl">(Cloud Resume Challenge)</a></li>
+							<li><b>Front-End</b> Static S3 website on CloudFront S3 website endpoint to use HTTPS, built with raw HTML/CSS. JS used to make the API call for the site counter.
+							Route53 record sets to redirect to custom url and to use www. address</li>
+							<li><b>Back-End</b> API Gateway triggers the Python Lambda Function to update the atomic counter stored in DynamoDB. These resources were all built using AWS SAM and Cloudformation using templates written in YAML.</li>
+							<li><b>CI/CD</b> Pushing a new update into the Github repo, triggers a Github Action (similar to Jenkins). It then runs a Python test on the Lambda Function to test for a "200" response, 
+							if it passes, Cloudformation then updates all the resources (S3, API Gateway, Lambda, DynamoDB), and thus delivers this updated website. This is set up for both front-end and back-end github pushes.</li>
+							<p class="semi-bold">Rails Projects</p>
 							<li>Built a simple Reddit clone using Ruby on Rails.<a href="https://ordep-postit.herokuapp.com/">Heroku Link</a></li>
 							<li>Wrote a blackjack game using Ruby and Sinatra. <a href="https://ordep-sinatrabj.herokuapp.com/player_form">Heroku Link</a></li>
 							
@@ -128,6 +138,7 @@
 								<div class="date">2020</div>
 								<div class="info">
 									<p class="semi-bold">AWS Certified Solutions Architect Associate</p>
+									<p class="semi-bold">AWS Certified Developer Associate</p>
 								</div>
 							</li>
 							<li class="cert2">
