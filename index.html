@@ -115,16 +115,17 @@
 							</div>
 						</div>
 						<ul>
-							<p class="semi-bold">AWS Projects</p>
-							<li><b>Resume Site on AWS</b> This site (ORDEProject.com), Which is a serverless website using multiple AWS Services <a href="https://dev.to/ordep81/my-journey-through-the-cloud-challenge-4pbl">(Cloud Resume Challenge)</a></li>
-							<li><b>Front-End</b> Static S3 website on CloudFront S3 website endpoint to use HTTPS, built with raw HTML/CSS. JS used to make the API call for the site counter.
-							Route53 record sets to redirect to custom url and to use www. address</li>
-							<li><b>Back-End</b> API Gateway triggers the Python Lambda Function to update the atomic counter stored in DynamoDB. These resources were all built using AWS SAM and Cloudformation using templates written in YAML.</li>
-							<li><b>CI/CD</b> Pushing a new update into the Github repo, triggers a Github Action (similar to Jenkins). It then runs a Python test on the Lambda Function to test for a "200" response, 
+							<p class="semi-bold"><u>AWS Resume Website</u></p>
+							<li>This site (ORDEProject.com), Which is a serverless website using multiple AWS Services <a href="https://dev.to/ordep81/my-journey-through-the-cloud-challenge-4pbl">(Cloud Resume Challenge)</a></li>
+							<li>-Front-End Static S3 website on CloudFront S3 website endpoint to use HTTPS, built with raw HTML/CSS. JS used to make the API call for the site counter.
+							Route53 record sets to redirect to custom url and to use www. address.</li>
+							<li>-Back-End API Gateway triggers the Python Lambda Function to update the atomic counter stored in DynamoDB. These resources were all built using AWS SAM and Cloudformation using templates written in YAML.</li>
+							<li>-CI/CD Pushing a new update into the Github repo, triggers a Github Action (similar to Jenkins). It then runs a Python test on the Lambda Function to test for a "200" response, 
 							if it passes, Cloudformation then updates all the resources (S3, API Gateway, Lambda, DynamoDB), and thus delivers this updated website. This is set up for both front-end and back-end github pushes.</li>
-							<p class="semi-bold">Rails Projects</p>
-							<li>Built a simple Reddit clone using Ruby on Rails.<a href="https://ordep-postit.herokuapp.com/">Heroku Link</a></li>
-							<li>Wrote a blackjack game using Ruby and Sinatra. <a href="https://ordep-sinatrabj.herokuapp.com/player_form">Heroku Link</a></li>
+							<p class="semi-bold"><u>3 Tier Wordpress APP</u></p>
+							<li>Evolving a single instance Wordpress App, to a 3 tier (Front End, App, DB) App using Amazon EFS,RDS MySql, and using Auto-Scaling groups with an Application Load Balancer in front of the instances for load balancing and elasticity.</li>
+							<p class="semi-bold"><u>Hybrid Cloud environment</u></p>
+							<li>Setting up a Hybrid cloud Environment with Site-to-Site VPN connectivity. Did this by simulating the on-prem environment on EC2 instances. Set up VPN connections from AWS endpoints to on-prem Customer Gateways. Created IPsec tunnels for the VPN connections. Set up BGP routing so routes can be exchanged for the Transit Gateway that was used.</li>
 							
 						</ul>
 					</div>
